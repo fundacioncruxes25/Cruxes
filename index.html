@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cruxes de Luz</title>
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <!-- Enlace a la fuente Inter de Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- EmailJS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+      (function() {
+        emailjs.init("TU_PUBLIC_KEY"); // Reemplazar con tu clave pública de EmailJS
+      })();
+    </script>
+    <link rel="stylesheet" href="styles/novedades.css">
+    <link rel="stylesheet" href="styles/contacto.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/cookies.css">
+    <link rel="stylesheet" href="styles/construccion.css">
+    <link rel="stylesheet" href="styles/whatsapp.css">
+    <link rel="stylesheet" href="styles/language.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/cursor.css">
+    <style>
+      .programa-highlight {
+        font-weight: 700;
+        color: var(--color-primary);
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header-flex">
+        <div class="logo">
+          <img src="imagen/Block.png" alt="Cruxes de Luz" class="logo-img">
+        </div>
+        <nav class="nav-header">
+          <ul class="nav-list">
+            <li><a href="#inicio" class="nav-link">Inicio</a></li>
+            <li><a href="paginas/quienes-somos.html" class="nav-link">¿QUIENES SOMOS?</a></li>
+            <li><a href="paginas/programas.html" class="nav-link">PROGRAMAS</a></li>
+            <li><a href="paginas/novedades.html" class="nav-link">NOVEDADES</a></li>
+            <li><a href="paginas/contacto.html" class="nav-link">CONTACTO</a></li>
+            <li><a href="paginas/dona.html" class="donate-button">Doná</a></li>
+          </ul>
+        </nav>
+        <div class="header-right">
+          <div class="social-icons">
+            <a href="https://wa.me/+5491131560677" target="_blank" rel="noopener" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://www.instagram.com/Cruxes_solidarias" target="_blank" rel="noopener" title="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="mailto:info@cruxes.org" title="Gmail"><i class="fas fa-envelope"></i></a>
+          </div>
+          <div class="language-switch">
+            <div class="language-toggle">
+              <input type="checkbox" id="languageToggle" class="language-toggle-input">
+              <label for="languageToggle" class="language-toggle-label">
+                <span class="language-option es">ES</span>
+                <span class="language-option en">EN</span>
+                <span class="language-slider"></span>
+              </label>
+            </div>
+          </div>
+          <button class="menu-toggle" aria-label="Menú">
+            <span class="hamburger"></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- Sección INICIO - Movida fuera del contenedor principal -->
+      <section id="inicio" class="section">
+        <div class="hero-section">
+          <div class="split-text-container">
+            <span class="text-part left" data-i18n="hero.title_left">BIENVENIDOS A CRUXES</span>
+            <span class="text-part right" data-i18n="hero.title_right">DE LUZ</span>
+          </div>
+          <q class="quote" data-i18n="hero.quote">AMOR en revolución</q>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <img src="imagen/Block.png" alt="Cruxes de Luz" class="footer-logo">
+        <div class="footer-center-content">
+          <p class="footer-text"><q>Una cadena de amor y servicio en acción</q></p>
+          <a href="documentos/politicas-de-seguridad.pdf" download class="footer-link">Cookies y políticas de seguridad</a>
+        </div>
+        <div class="social-icons">
+          <a href="https://wa.me/+5491131560677" target="_blank" rel="noopener" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          <a href="https://www.instagram.com/Cruxes_solidarias" target="_blank" rel="noopener" title="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="mailto:info@cruxes.org" title="Gmail"><i class="fas fa-envelope"></i></a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Modal de Política de Cookies -->
+    <div id="modal-cookies" class="modal-cookies">
+      <div class="modal-contenido">
+        <!-- Contenedor para el texto largo -->
+        <div class="modal-text-content">
+            <h3>POLÍTICA DE PRIVACIDAD</h3>
+            <p>En la FUNDACIÓN CRUXES, nos comprometemos a proteger la privacidad de nuestros usuarios, beneficiarios, aliados y colaboradores. Cumplimos con las disposiciones establecidas en la Ley 25.326 de Protección de los Datos Personales y garantizamos el tratamiento responsable de la información que nos proporcionas.</p>
+            <ol>
+              <li><strong>Información que recopilamos</strong><br>
+                <strong>Datos personales:</strong> Nombre, apellido, correo electrónico, número de teléfono y cualquier otra información que decidas compartirnos al registrarte o contactarnos.<br>
+                <strong>Datos técnicos:</strong> Dirección IP, tipo de navegador, sistema operativo y cookies, con el objetivo de mejorar la experiencia de navegación.
+              </li>
+              <li><strong>Finalidad del tratamiento de los datos</strong><br>Tus datos personales serán utilizados únicamente para:<br>
+                <ul>
+                  <li>Mantenerte informado sobre nuestras actividades y campañas.</li>
+                  <li>Gestionar colaboraciones o donaciones.</li>
+                  <li>Responder a tus consultas o solicitudes.</li>
+                  <li>Cumplir con nuestras obligaciones legales y regulatorias.</li>
+                </ul>
+              </li>
+              <li><strong>Derechos de los titulares de datos</strong><br>De acuerdo con la Ley 25.326, tienes los siguientes derechos:<br>
+                <ul>
+                  <li>Acceder a tus datos personales que obran en nuestra base.</li>
+                  <li>Solicitar la rectificación, actualización o supresión de tus datos.</li>
+                  <li>Oponerte al uso de tus datos para ciertos fines, como comunicaciones comerciales.</li>
+                </ul>
+                Podrás ejercer estos derechos enviando un correo electrónico a nuestro email info@cruxes.org, o llamando al teléfono +54-11-3156-0677.
+              </li>
+              <li><strong>Uso de cookies y tecnologías similares</strong><br>Utilizamos cookies para mejorar la funcionalidad de nuestro sitio web. Puedes configurar tu navegador para desactivarlas, aunque esto podría afectar la experiencia de navegación.</li>
+              <li><strong>Confidencialidad y seguridad</strong><br>Implementamos medidas técnicas y organizativas para proteger tu información frente a accesos no autorizados, pérdidas o alteraciones.</li>
+              <li><strong>Transferencia de datos a terceros</strong><br>No compartimos, vendemos ni cedemos tus datos personales a terceros, salvo en los siguientes casos:<br>
+                <ul>
+                  <li>Con proveedores de servicios que nos ayudan en la administración de nuestro sitio web, bajo acuerdos de confidencialidad.</li>
+                  <li>Para cumplir con obligaciones legales o requerimientos judiciales.</li>
+                </ul>
+              </li>
+              <li><strong>Autoridad de aplicación</strong><br>En caso de considerar que hemos incumplido con la Ley 25.326, puedes presentar un reclamo ante la Agencia de Acceso a la Información Pública, órgano de control de la ley en Argentina.</li>
+            </ol>
+        </div>
+
+        <div class="modal-botones">
+          <button class="btn-aceptar">Aceptar</button>
+          <button class="btn-rechazar">Rechazar</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scripts al final del body -->
+    <script src="js/translations.js"></script>
+    <script src="script.js"></script>
+    <script src="cookie_consent.js"></script>
+
+    <!-- Flecha flotante para ir arriba -->
+    <a href="#" class="scroll-top-float hidden" id="scrollTopBtn" aria-label="Ir arriba">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- Botón flotante de WhatsApp -->
+    <a href="https://wa.me/+5491131560677" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+  </body>
+</html>
