@@ -1,7 +1,7 @@
 /* Cursor personalizado de manos para toda la página */
-* {
+/* * {
     cursor: url('imagen/cursor-hands.png'), url('../imagen/cursor-hands.png'), auto !important;
-}
+} */
 
 /* Cursor específico para elementos interactivos */
 .card-flip,
