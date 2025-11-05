@@ -1,0 +1,22 @@
+5-11
+
+* Se corrige de los estilos principales de body el padding-top para que no genere
+el espacio innecesario cuando la página descansa en pantalla completa.
+
+* Se elimina el elemento redundante <div> que trabaja como contenedor del header, dejando al
+elemento header cumplir dicha función.
+
+* Se eliminan los íconos de las redes sociales de la barra de navegación.
+
+* Se agregan los estilos del elemento <div> mencionado en el punto anterior al header. Se
+logro limpiar código y que el elemento tenga escalabilidad.
+
+* Se elimina de la barra de navegación la estructura con valores fijos para dar
+flexibilidad a los elementos.
+
+* Se corrige del elemento header el estilo height que forzaba al elemento a completar
+el espacio.
+
+* Se actualizó el texto de la sección hero.
+
+* Se elimino el archivo cursor y todas las vinculaciones
