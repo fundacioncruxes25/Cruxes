@@ -1,3 +1,11 @@
+<!--
+    == PÁGINA QUIENES SOMOS ==
+
+    Autor: Juan Decia
+    
+    Última Actualización: 8/11/2025
+-->
+
 <!DOCTYPE html>
 <html lang="es">
   <head>
@@ -27,43 +35,48 @@
   </head>
   <body>
 
-    <!-- HEADER SECTION -->
+    <!-- ### CONTENEDOR HEADER ### -->
     <header class="header">
-      <div class="container header-flex">
-        <div class="logo">
-          <img src="../imagen/Block.png" alt="Cruxes de Luz" class="logo-img">
-        </div>
-        <nav class="nav-header">
-          <ul class="nav-list">
-            <li><a href="../index.html" class="nav-link">Inicio</a></li>
-            <li><a href="quienes-somos.html" class="nav-link">¿QUIENES SOMOS?</a></li>
-            <li><a href="programas.html" class="nav-link">PROGRAMAS</a></li>
-            <li><a href="novedades.html" class="nav-link">NOVEDADES</a></li>
-            <li><a href="contacto.html" class="nav-link">CONTACTO</a></li>
-            <li><a href="dona.html" class="donate-button">Doná</a></li>
-          </ul>
-        </nav>
-        <div class="header-right">
-          <div class="social-icons">
-            <a href="https://wa.me/+5491131560677" target="_blank" rel="noopener" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
-            <a href="https://www.instagram.com/Cruxes_solidarias" target="_blank" rel="noopener" title="Instagram"><i class="fab fa-instagram"></i></a>
-            <a href="mailto:info@cruxes.org" title="Gmail"><i class="fas fa-envelope"></i></a>
-          </div>
-          <div class="language-switch">
-            <div class="language-toggle">
-              <input type="checkbox" id="languageToggle" class="language-toggle-input">
-              <label for="languageToggle" class="language-toggle-label">
-                <span class="language-option es">ES</span>
-                <span class="language-option en">EN</span>
-                <span class="language-slider"></span>
-              </label>
-            </div>
-          </div>
-          <button class="menu-toggle" aria-label="Menú">
-            <span class="hamburger"></span>
-          </button>
-        </div>
+
+      <!-- CONTENEDOR LOGO -->
+      <div class="logo">
+        <img src="/imagen/Block.png" alt="Cruxes de Luz" class="logo-img">
       </div>
+
+      <!-- CONTENEDOR NAVEGACIÓN -->
+      <nav class="nav-header">
+        <!-- CONTENEDOR LISTA NAVEGACIÓN -->
+        <ul class="nav-list">
+          <li><a href="/index.html" class="nav-link">Inicio</a></li>
+          <li><a href="/paginas/quienes-somos.html" class="nav-link">¿QUIENES SOMOS?</a></li>
+          <li><a href="/paginas/programas.html" class="nav-link">PROGRAMAS</a></li>
+          <li><a href="/paginas/novedades.html" class="nav-link">NOVEDADES</a></li>
+          <li><a href="/paginas/contacto.html" class="nav-link">CONTACTO</a></li>
+          <li><a href="/paginas/dona.html" class="donate-button">Doná</a></li>
+        </ul>
+      </nav>
+
+      <!-- CONTENEDOR MENÚ DESPLEGABLE E IDIOMAS -->
+      <div class="header-right">
+
+        <!-- Contenedor de idiomas -->
+        <div class="language-switch">
+          <div class="language-toggle">
+            <input type="checkbox" id="languageToggle" class="language-toggle-input">
+            <label for="languageToggle" class="language-toggle-label">
+              <span class="language-option es">ES</span>
+              <span class="language-option en">EN</span>
+              <span class="language-slider"></span>
+            </label>
+          </div>
+        </div>
+
+        <!-- Contenedor del menú hamburguesa -->
+        <button class="menu-toggle" aria-label="Menú">
+          <span class="hamburger"></span>
+        </button>
+      </div>
+
     </header>
 
     <!-- MAIN SECTION -->

@@ -20,3 +20,12 @@ el espacio.
 * Se actualizó el texto de la sección hero.
 
 * Se elimino el archivo cursor y todas las vinculaciones
+
+6-11
+
+* Se identifica una página duplicada en el subdirectorio Cruxes dentro de la carpeta raíz.
+
+8-11
+
+* Se corrigen todos los links del header a rutas relativas de todas las páginas.
+* Se copia plantilla de header para todas las páginas.

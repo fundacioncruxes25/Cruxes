@@ -1,54 +1,31 @@
-/* Estilos del encabezado */
-.header {
-    height: 80px;
-    position: fixed;
+/* 
+    == ARCHIVO ESTILOS SECCIÓN HEADER ==
+
+    == ORDEN DE ESTILOS SEGÚN ESTRUCTURA SEMÁNTICA == 
+
+    == "### INDICA INICIO DE BLOQUE DE ESTILOS ### ==
+
+    Autor: Juan Decia
+    
+    Última Actualización: 7/11/2025
+*/
+
+/* ### CONTENEDOR PRINCIPAL DEL HEADER ### */
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: fixed; /* Fijo en la parte superior */
     top: 0;
-    left: 0;
-    right: 0;
+    padding: 30px;
     background: white;
     z-index: var(--z-header);
     box-shadow: var(--shadow-sm);
     transition: all 0.3s ease;
 }
 
-/* Efecto blur cuando se hace scroll */
-.header.scrolled {
-    background: rgba(255, 255, 255, 0.7);
-    backdrop-filter: blur(15px);
-    -webkit-backdrop-filter: blur(15px);
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
-}
-
-/* Contenedor flexible para el header */
-.header-flex {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 30px;
-    height: 70px;
-    background: #fff;
-    transition: all 0.3s ease;
-}
-
-/* Efecto blur cuando se hace scroll */
-.header.scrolled {
-    background: rgba(255, 255, 255, 0.7);
-    backdrop-filter: blur(15px);
-    -webkit-backdrop-filter: blur(15px);
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
-}
-
-.header.scrolled .header-flex {
-    background: transparent;
-}
-
-/* Imagen del logo */
-.logo-img {
-    width: 150px;
-    height: 48px;
-    gap: 24px;
-    object-fit: contain;
-}
+/* ### CONTENEDOR LOGO ### */
 
 /* Estilos del texto del logo */
 .logo {
@@ -63,60 +40,24 @@
     font-size: var(--font-size-xl);
 }
 
+/* Logo */
+.logo-img {
+    width: 150px;
+    height: 48px;
+    gap: 24px;
+    object-fit: contain;
+}
 
+/* ### CONTENEDOR NAVEGACIÓN ### */
 
-/* Iconos sociales */
-.social-icons {
+/* Elemento principal de navegación */
+nav {
+    flex: 1 0 auto;
     display: flex;
-    gap: 12px;
-}
-
-.social-icons a {
-    color: var(--color-primary-dark);
-    font-size: var(--font-size-xl);
-    transition: color 0.2s;
-}
-
-.social-icons a:hover {
-    color: var(--color-primary-light);
-}
-
-/* Botón de donación */
-.donate-button {
-    background: linear-gradient(135deg, #E84E1D 0%, #F2920C 100%);
-    color: var(--text-light);
-    border: none;
-    border-radius: var(--border-radius);
-    padding: 12px 24px;
-    font-weight: 700;
-    cursor: pointer;
-    font-family: var(--font-family);
-    margin: 0;
-    height: 44px;
-    font-size: var(--font-size-md);
-    line-height: 1.2;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
     justify-content: center;
-    transition: all 0.3s ease;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    text-transform: uppercase;
 }
 
-.donate-button:hover {
-    background: linear-gradient(135deg, #F2920C 0%, #E84E1D 100%);
-    transform: translateY(-1px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
-}
-
-/* Barra de navegación */
-.nav {
-    background-color: hwb(32 4% 13%);
-    padding: 0.75rem 0;
-}
-
-/* Lista de navegación */
+/* Elemento UL, contenedor lista */
 .nav-list {
     display: flex;
     justify-content: center;
@@ -125,10 +66,10 @@
     list-style: none;
 }
 
+/* Elemento LI */
 .nav-list li {
     display: flex;
     align-items: center;
-    height: 100%;
 }
 
 /* Enlaces de navegación */
@@ -168,6 +109,44 @@
 /* Línea indicadora de enlace activo */
 .nav-link.active::after {
     width: 100%;
+}
+
+/* ### CONTENEDOR MENU E IDIOMA ### */
+
+/* Contenedor Principal */
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+/* Botón de donación */
+.donate-button {
+    background: linear-gradient(135deg, #E84E1D 0%, #F2920C 100%);
+    color: var(--text-light);
+    border: none;
+    border-radius: var(--border-radius);
+    padding: 12px 24px;
+    font-weight: 700;
+    cursor: pointer;
+    font-family: var(--font-family);
+    margin: 0;
+    height: 44px;
+    font-size: var(--font-size-md);
+    line-height: 1.2;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-transform: uppercase;
+}
+
+.donate-button:hover {
+    background: linear-gradient(135deg, #F2920C 0%, #E84E1D 100%);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
 
 /* Botón del menú hamburguesa */
@@ -221,19 +200,6 @@
 .menu-toggle.active .hamburger::after {
     transform: rotate(-45deg);
     top: 0;
-}
-
-/* Navegación del header */
-.nav-header {
-    flex: 1 0 auto;
-    display: flex;
-    justify-content: center;
-}
-
-.header-right {
-    display: flex;
-    align-items: center;
-    gap: 18px;
 }
 
 /* Estilos para el switch de idioma */
@@ -320,18 +286,13 @@
     background: #e8e8e8;
 }
 
+/* #### MEDIA QUERIES #### */
+
+/* Pantallas Grandes */
 @media (min-width: 1024px) and (max-width: 1440px) {
-    .header-flex {
-        padding: 0 25px;
-    }
 
     .logo-img {
         width: 140px;
-        gap: 15px;
-    }
-
-    .nav-list {
-        gap: 20px;
     }
 
     .nav-link {
@@ -595,3 +556,30 @@
     margin-left: 0;
   }
 } 
+
+
+/* Efecto blur cuando se hace scroll
+.header.scrolled {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+} */
+
+/* Efecto blur cuando se hace scroll
+.header.scrolled {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+} */
+
+/* .header.scrolled .header-flex {
+    background: transparent;
+} */
+
+/* Barra de navegación
+.nav {
+    background-color: hwb(32 4% 13%);
+    padding: 0.75rem 0;
+} */
