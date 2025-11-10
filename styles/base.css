@@ -1,31 +1,29 @@
 /* 
     == ARCHIVO CON LOS ESTILOS PRINCIPALES ==
 
-    == ORDEN DE ESTILOS SEGÚN ESTRUCTURA SEMÁNTICA ==
+    == ORDEN DE ESTILOS SEGÚN JERARQUÍA ==
 
     Autor: Juan Decia
     
-    Última Actualización: 5/11/2025
+    Última Actualización: 10/11/2025
 */
 
-/* ==== INICIO ESTILOS GENERALES ==== */
-
+/* Reset */
 * {
-    /* Reset y estilos base */
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: var(--font-family);
 }
 
-html {
-    /* Scroll suave para anclas */
-    scroll-behavior: smooth;
+/* Fondo general de la página */
+html, body {
+    height: 100%;
 }
 
-html, body {
-    /* Fondo general de la página */
-    height: 100%;
+/* Configuración de scroll suave */
+html {
+    scroll-behavior: smooth;
 }
 
 body {
@@ -37,21 +35,24 @@ body {
 }
 
 main {
-    flex: 1; /* Esto hace que el main ocupe el espacio disponible */
-    width: 100%;
+    flex: 1 0 auto;
 }
-/* =================================== */
 
-/* ==== INICIO ESTILOS CONTENIDO ==== */
-
-/* Contenedor Contenido Principal */
-
-
-/* Contenedor principal */
+/* Contenedor principal con ancho máximo */
 .container {
     width: 90%;
     max-width: 1630px;
     margin: 0 auto;
+}
+
+/* Estilos base para secciones */
+.section {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer {
+    flex-shrink: 0;
 }
 
 /* Estilos base para enlaces */
@@ -60,21 +61,9 @@ a {
     color: inherit;
 }
 
-/* Contenedor de pie de página */
-.footer {
-    flex-shrink: 0;
-}
-
-
 /* Clase para ocultar elementos */
 .hidden {
     display: none !important;
-}
-
-/* Estilos base para secciones */
-.section {
-    display: flex;
-    flex-direction: column;
 }
 
 /* Asegurar que la sección de inicio no tenga margen, relleno ni borde */
@@ -105,7 +94,7 @@ a {
   font-size: var(--font-size-lg);
 }
 
-/* ### MEDIA QUERIES ### */
+/* == MEDIA QUERIES == */
 
 @media (max-width: 1024px) {
     .container {
