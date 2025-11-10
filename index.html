@@ -2,9 +2,7 @@
  
     == PÁGINA PRINCIPAL DE CRUXES DE LUZ ==
  
-    Autor: Juan Decia
- 
-    Última Actualización: 7/11/2025
+    Última Actualización: 8/11/2025
 
 -->
 
@@ -13,6 +11,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Página principal de Cruxes de Luz" />
+    <meta name="keywords" content="Cruxes, Fundación, Solidaria, Programas, Donaciones" />
+    <meta name="author" content="Juan Decia" />
     <title>Cruxes de Luz</title>
     <link rel="stylesheet" href="styles/main.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
@@ -27,14 +28,15 @@
         emailjs.init("TU_PUBLIC_KEY"); // Reemplazar con tu clave pública de EmailJS
       })();
     </script>
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/hero.css">
     <link rel="stylesheet" href="styles/novedades.css">
     <link rel="stylesheet" href="styles/contacto.css">
-    <link rel="stylesheet" href="styles/footer.css">
-    <link rel="stylesheet" href="styles/cookies.css">
     <link rel="stylesheet" href="styles/construccion.css">
     <link rel="stylesheet" href="styles/whatsapp.css">
     <link rel="stylesheet" href="styles/language.css">
-    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/cookies.css">
     <style>
       .programa-highlight {
         font-weight: 700;
@@ -44,17 +46,18 @@
   </head>
   <body>
 
-    <!-- ### CONTENEDOR HEADER ### -->
+    <!-- #### CONTENEDOR HEADER #### -->
     <header class="header">
 
-      <!-- CONTENEDOR LOGO -->
+      <!-- Contenedor para sección Logo -->
       <div class="logo">
         <img src="imagen/Block.png" alt="Cruxes de Luz" class="logo-img">
       </div>
 
-      <!-- CONTENEDOR NAVEGACIÓN -->
+      <!-- Contenedor para sección Navegación -->
       <nav class="nav-header">
-        <!-- CONTENEDOR LISTA NAVEGACIÓN -->
+
+        <!-- Contenedor para lista de la navegación -->
         <ul class="nav-list">
           <li><a href="#inicio" class="nav-link">Inicio</a></li>
           <li><a href="paginas/quienes-somos.html" class="nav-link">¿QUIENES SOMOS?</a></li>
@@ -65,7 +68,7 @@
         </ul>
       </nav>
 
-      <!-- CONTENEDOR MENÚ DESPLEGABLE E IDIOMAS -->
+      <!-- Contenedor para menú e idioma -->
       <div class="header-right">
 
         <!-- Contenedor de idiomas -->
@@ -85,16 +88,17 @@
           <span class="hamburger"></span>
         </button>
       </div>
-
     </header>
 
-    <!-- ### CONTENEDOR CONTENIDO PRINCIPAL ### -->
+    <!-- #### CONTENEDOR CONTENIDO PRINCIPAL #### -->
     <main>
-      <!-- Sección INICIO - Movida fuera del contenedor principal -->
-      <section id="inicio" class="section">
-        <div class="hero-section">
+
+      <!-- Sección Hero -->
+      <section class="hero-section">
+        <div class="hero-content">
           <div class="split-text-container">
             <span class="text-part left" data-i18n="hero.title_left">BIENVENIDOS A CRUXES</span>
+            <span class="text-part right" data-i18n="hero.title_right">DE LUZ</span>
           </div>
           <q class="quote" data-i18n="hero.quote">AMOR en revolución</q>
         </div>

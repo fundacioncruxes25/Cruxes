@@ -1,39 +1,16 @@
-/* Sección hero */
-.hero-section {
-    text-align: center;
-    position: relative;
-    background-image: url('../imagen/atardecer.webp');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-top: 0;
-    padding-bottom: 0;
-    margin-top: 0;
-    border-top: none;
-    animation: heroBackgroundMove 20s ease-in-out infinite alternate, heroBackgroundFade 8s ease-in-out infinite;
-}
+/* 
+    == ARCHIVO ESTILOS SECCIÓN HERO ==
 
-/* Animación del fondo */
-@keyframes heroBackgroundMove {
-    0% {
-        background-position: center center;
-        background-size: 100% auto;
-    }
-    50% {
-        background-position: center center;
-        background-size: 120% auto;
-    }
-    100% {
-        background-position: center center;
-        background-size: 140% auto;
-    }
-}
+    == ORDEN DE ESTILOS SEGÚN ESTRUCTURA SEMÁNTICA == 
+
+    == "### INDICA INICIO DE BLOQUE DE ESTILOS ### ==
+
+    Autor: Juan Decia
+    
+    Última Actualización: 8/11/2025
+*/
+
+/* #### INICIO SECCIÓN ANIMACIONES #### */
 
 /* Animación de atenuación de brillo y saturación */
 @keyframes heroBackgroundFade {
@@ -52,6 +29,62 @@
     100% {
         filter: brightness(1) saturate(1);
     }
+}
+
+/* Animación del fondo */
+@keyframes heroBackgroundMove {
+    0% {
+        background-position: center center;
+        background-size: 100% auto;
+    }
+    50% {
+        background-position: center center;
+        background-size: 120% auto;
+    }
+    100% {
+        background-position: center center;
+        background-size: 140% auto;
+    }
+}
+
+@keyframes slide-in-left {
+    0% {
+        transform: translateX(-200%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slide-in-right {
+    0% {
+        transform: translateX(200%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+/* ###################################### */
+
+/* Sección hero */
+.hero-section {
+    text-align: center;
+    position: relative;
+    background-image: url('../imagen/atardecer.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 40vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: 0;
+    border-top: none;
+    animation: heroBackgroundMove 20s ease-in-out infinite alternate, heroBackgroundFade 8s ease-in-out infinite;
 }
 
 /* Overlay para la imagen de fondo */
@@ -141,24 +174,6 @@
 .text-part.right {
     transform: translateX(200%);
     animation-name: slide-in-right;
-}
-
-@keyframes slide-in-left {
-    0% {
-        transform: translateX(-200%);
-    }
-    100% {
-        transform: translateX(0);
-    }
-}
-
-@keyframes slide-in-right {
-    0% {
-        transform: translateX(200%);
-    }
-    100% {
-        transform: translateX(0);
-    }
 }
 
 /* ====== MEDIA QUERIES ====== */

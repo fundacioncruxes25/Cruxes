@@ -29,3 +29,5 @@ el espacio.
 
 * Se corrigen todos los links del header a rutas relativas de todas las páginas.
 * Se copia plantilla de header para todas las páginas.
+* Se agrega propiedad shadow al header.
+* Se agregaron etiquetas meta para mejorar estadísticas.

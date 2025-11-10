@@ -7,7 +7,7 @@
 
     Autor: Juan Decia
     
-    Última Actualización: 7/11/2025
+    Última Actualización: 8/11/2025
 */
 
 /* ### CONTENEDOR PRINCIPAL DEL HEADER ### */
@@ -16,12 +16,14 @@ header {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    position: fixed; /* Fijo en la parte superior */
+    position: sticky; /* Fijo en la parte superior */
     top: 0;
     padding: 30px;
     background: white;
     z-index: var(--z-header);
-    box-shadow: var(--shadow-sm);
+    box-shadow: 0px 10px 20px -5px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 10px 20px -5px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 10px 20px -5px rgba(0,0,0,0.75);
     transition: all 0.3s ease;
 }
 

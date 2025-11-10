@@ -36,14 +36,15 @@ body {
     min-height: 100vh;
 }
 
-/* ==== FIN DE ESTILOS GENERALES ==== */
+main {
+    flex: 1; /* Esto hace que el main ocupe el espacio disponible */
+    width: 100%;
+}
+/* =================================== */
 
 /* ==== INICIO ESTILOS CONTENIDO ==== */
 
 /* Contenedor Contenido Principal */
-main {
-    flex: 1 0 auto;
-}
 
 
 /* Contenedor principal */
