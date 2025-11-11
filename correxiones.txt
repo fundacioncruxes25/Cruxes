@@ -3,8 +3,8 @@
 * Se corrige de los estilos principales de body el padding-top para que no genere
 el espacio innecesario cuando la página descansa en pantalla completa.
 
-* Se elimina el elemento redundante <div> que trabaja como contenedor del header, dejando al
-elemento header cumplir dicha función.
+* Se elimina el elemento hijo <div> con clase "container header-flex" del elemento header. Se agregan los estilos de dicho elemento
+    al elemento header para evitar funciones redundantes.
 
 * Se eliminan los íconos de las redes sociales de la barra de navegación.
 
@@ -27,7 +27,18 @@ el espacio.
 
 8-11
 
-* Se corrigen todos los links del header a rutas relativas de todas las páginas.
 * Se copia plantilla de header para todas las páginas.
 * Se agrega propiedad shadow al header.
 * Se agregaron etiquetas meta para mejorar estadísticas.
+
+9-11
+
+DIRECTORIO CRUXES
+
+    * Se corrigió altura de la imagen del la sección hero a 70vh.
+    * Se agergaron datos para mejorar la lectura de pantallas de los navegadores a todas las páginas adyacentes.
+    * Se argegaron comentarios y correcciones semánticas a las páginas internas.
+    * Se corrige suprimiento el elemento div con clase "container header-flex" de todos los header de las páginas adyacentes.
+    * Se borra el estilo "header-flex" del archivo "header.css", pasando los estilos al estilo "hedader" para evitar estilos
+        duplicados para evitar generar superposición entre ellos y con el objetivo de mejorar la lectura y escalabilidad.
+    

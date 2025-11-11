@@ -9,29 +9,18 @@
 */
 
 /* Estilos del encabezado */
-.header {
+header {
     display: flex;
     justify-content: space-around;
     align-items: center;
     padding: 20px;
     position: sticky;
     top: 0;
-    background: white;
+    background: #fff;
     z-index: var(--z-header);
     box-shadow: 0px 10px 20px -5px rgba(0,0,0,0.75);
     -webkit-box-shadow: 0px 10px 20px -5px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 10px 20px -5px rgba(0,0,0,0.75);
-    transition: all 0.3s ease;
-}
-
-/* Contenedor flexible para el header */
-.header-flex {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 30px;
-    height: 70px;
-    background: #fff;
     transition: all 0.3s ease;
 }
 
