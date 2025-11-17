@@ -31,14 +31,29 @@ el espacio.
 * Se agrega propiedad shadow al header.
 * Se agregaron etiquetas meta para mejorar estadísticas.
 
-9-11
+11-11
 
 DIRECTORIO CRUXES
 
     * Se corrigió altura de la imagen del la sección hero a 70vh.
-    * Se agergaron datos para mejorar la lectura de pantallas de los navegadores a todas las páginas adyacentes.
+    * Se agergaron metadatos para mejorar la lectura de pantallas de los navegadores a todas las páginas adyacentes.
     * Se argegaron comentarios y correcciones semánticas a las páginas internas.
-    * Se corrige suprimiento el elemento div con clase "container header-flex" de todos los header de las páginas adyacentes.
-    * Se borra el estilo "header-flex" del archivo "header.css", pasando los estilos al estilo "hedader" para evitar estilos
-        duplicados para evitar generar superposición entre ellos y con el objetivo de mejorar la lectura y escalabilidad.
-    
+    * Se elimina el elemento div con clase "container header-flex" de todos los header de las páginas adyacentes.
+    * Se borra el estilo "header-flex" del archivo "header.css", pasando los estilos al estilo "hedader" para 
+        evitar estilos duplicados y no generar superposición entre ellos, con el objetivo de mejorar la lectura y escalabilidad.
+
+12-11
+
+DIRECTORIO CRUXES
+
+    * Se comienza con la construcción de las cards de la página principal
+
+13-11
+
+    * Se coloca color correspondientes a los títulos de las cards que están preseteados.
+    * Se comienza con la edición de imagen para convertirla en png y eliminar el fondo.
+
+14-11
+
+    * Se corrige el reporte para achicar la imagen del hero.
+    * Se establece la imagen con las correcciones solicitadas y sin fondo para que no afecte el color de la página.

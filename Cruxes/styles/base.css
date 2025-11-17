@@ -46,9 +46,55 @@ main {
 }
 
 /* Estilos base para secciones */
-.section {
+section {
     display: flex;
     flex-direction: column;
+}
+
+.section-objetivos {
+    margin: 6% auto;
+    flex-direction: row;
+    max-width: 90%;
+    justify-content: center;
+}
+
+.article-objetivos {
+    display: flex;
+    flex-direction: column;
+    width: 33.3%;
+}
+
+.card-titulo {
+    padding: 20px;
+}
+
+.card-subtitle {
+    color: var(--color-primary);
+}
+
+.card-imagen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.card-imagen > figure {
+    display: flex;
+    height: 30%;
+}
+
+.card-descripcion {
+    padding: 20px;
+}
+
+.card-descripcion > p {
+    text-align: justify;
+    line-height: 1.5em;
+}
+
+.card-descripcion > ul > li {
+    padding: 10px;
 }
 
 .footer {
