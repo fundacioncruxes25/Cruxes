@@ -5,7 +5,7 @@
 
     Autor: Juan Decia
     
-    Última Actualización: 10/11/2025
+    Última Actualización: 20/11/2025
 */
 
 /* Reset */
@@ -52,7 +52,7 @@ section {
 }
 
 .section-objetivos {
-    margin: 6% auto;
+    margin: 3% auto;
     flex-direction: row;
     max-width: 90%;
     justify-content: center;
@@ -69,6 +69,7 @@ section {
 }
 
 .card-subtitle {
+    font-size: 2em;
     color: var(--color-primary);
 }
 
@@ -85,16 +86,26 @@ section {
 }
 
 .card-descripcion {
-    padding: 20px;
+    padding: 15px;
 }
 
 .card-descripcion > p {
     text-align: justify;
-    line-height: 1.5em;
+    line-height: 1.4em;
 }
 
 .card-descripcion > ul > li {
     padding: 10px;
+}
+
+/* ====================================== */
+
+/* Sección Flayers */
+
+.seccion-flayers {
+    margin: 6% auto;
+    max-width: 90%;
+    border: 1px solid black;
 }
 
 .footer {
@@ -156,6 +167,24 @@ a {
         max-width: 640px;
         margin: 0 auto;
     }
+    
+    .section-objetivos{
+        flex-direction: column;
+    }
+
+    .article-objetivos{
+        width: 100%;
+    }
+
+    .card-imagen img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin-top: 20px;
+    }
+
+    .card-descripcion ul {
+        margin-left: 15px;    }
 }
 
 @media (max-width: 480px) {

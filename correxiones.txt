@@ -57,3 +57,12 @@ DIRECTORIO CRUXES
 
     * Se corrige el reporte para achicar la imagen del hero.
     * Se establece la imagen con las correcciones solicitadas y sin fondo para que no afecte el color de la página.
+
+20-11
+
+    Sección Objetivos: 
+
+    * Se corrige el espacio de margin a un 3%.
+    * Se corrige el tamaño de las letras a 2em.
+    * Se crearon las mediaqueries para la nueva sección en pantallas chicas.
+    * Se corrigieron los logos de la cabecera y del footer.
