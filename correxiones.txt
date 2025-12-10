@@ -46,7 +46,7 @@ DIRECTORIO CRUXES
 
 DIRECTORIO CRUXES
 
-    * Se comienza con la construcción de las cards de la página principal
+    * Se comienza con la construcción de las cards de la página principal.
 
 13-11
 
@@ -66,3 +66,45 @@ DIRECTORIO CRUXES
     * Se corrige el tamaño de las letras a 2em.
     * Se crearon las mediaqueries para la nueva sección en pantallas chicas.
     * Se corrigieron los logos de la cabecera y del footer.
+
+21-11
+
+    * Se mejora la documentación del archivo de estilos 'base'.
+    * Se corrige la posición de los bullets de las listas por dentro del contenedor.
+
+22-11
+
+    * Se agrega un nuevo breakpoint 'large' para pantallas de 992px.
+
+24-11
+
+    * Se corrigen los elementos de la lista de "que ofrecemos" con mejores prácticas en los estilos.
+    * Se cambia el color del footer.
+    * Se crea el archivo de estilso Flayers.
+    * Se crea la estructura de los flayers dentro del archivo main.
+    * Se edita la imagen de programa de voluntariado, optimizando peso y cortando la imagen.
+
+25-11
+    * Se realizan las correcciones de la página de contactos.
+    * Se cambia formato de footer.
+
+1-12
+    * Se reconstruye la sección de las secciones y los estilos para simplificar el mantenimiento del mismo.
+
+2-12
+    * Se agregan los separadores con los estilos solicitados.
+
+3-12
+    * Se comienza con la construcción del nuevo diseño de la sección de flayers.
+    * Muestra de contenido.
+
+4-12 al 8-12
+    * Se corrigen los diseños y tamaños de las imágenes.
+    * Se aplican estilos para realizar el script de las flip-cards.
+    * Muestra de contenido.
+
+9-12
+    * Se aplican los scrips necesarios para el efecto "flip-card".
+
+10-12
+    * Se aplica responsive a los cambios nuevos.

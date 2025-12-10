@@ -1,6 +1,6 @@
-/* ========================================================================== */
-/* SECCIÓN CONTACTO */
-/* ========================================================================== */
+/* ========================================================================== 
+ESTILOS CONTACTO
+   ========================================================================== */
 
 #contacto {
     margin-top: var(--spacing-md); /* Añadir espacio en la parte superior */
@@ -48,11 +48,12 @@
     font-size: var(--font-size-lg); /* Ajustar tamaño del párrafo */
 }
 
-/* Iconos sociales dentro de contacto info */
+/* Iconos sociales */
 .contacto-info .social-icons {
     display: flex;
-    gap: var(--spacing-sm); /* Espacio entre iconos */
-    margin-top: var(--spacing-md); /* Espacio encima de los iconos */
+    flex-direction: column;
+    gap: var(--spacing-sm);
+    margin-top: var(--spacing-md);
 }
 
 .contacto-info .social-icons a {

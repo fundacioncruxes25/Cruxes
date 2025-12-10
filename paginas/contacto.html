@@ -1,23 +1,32 @@
-<!--
-    == PÁGINA QUIENES SOMOS ==
-    
-    Última Actualización: 8/11/2025
+<!-- 
+ 
+    == PÁGINA CONTACTO ==
+ 
+    Última Actualización: 26/11/2025
+
 -->
 
 <!DOCTYPE html>
 <html lang="es">
   <head>
+
+    <!-- METADATOS -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Contacto | Cruxes de Luz" />
+    <meta name="description" content="Página principal de Cruxes de Luz" />
     <meta name="keywords" content="Cruxes, Fundación, Solidaria, Programas, Donaciones" />
     <meta name="author" content="Juan Decia" />
+
+    <!-- TÍTULO PÁGINA -->
     <title>Contacto | Cruxes de Luz</title>
+
+    <!-- ENLACES A ESTILOS Y FUENTES -->
     <link rel="stylesheet" href="../styles/main.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="../styles/novedades.css">
     <link rel="stylesheet" href="../styles/contacto.css">
     <link rel="stylesheet" href="../styles/footer.css">
@@ -26,7 +35,6 @@
     <link rel="stylesheet" href="../styles/whatsapp.css">
     <link rel="stylesheet" href="../styles/language.css">
     <link rel="stylesheet" href="../styles/header.css">
-    <link rel="stylesheet" href="../styles/cursor.css">
     <style>
       .programa-highlight {
         font-weight: 700;
@@ -35,31 +43,29 @@
     </style>
   </head>
   <body>
-    <!-- ### CONTENEDOR HEADER ### -->
-    <header class="header">
 
-      <!-- CONTENEDOR LOGO -->
+    <!-- HEADER -->
+    <header>
+
+      <!-- Contenedor Logo -->
       <div class="logo">
-        <img src="/imagen/Block.png" alt="Cruxes de Luz" class="logo-img">
+        <img src="../imagen/Block.png" alt="Cruxes de Luz" class="logo-img">
       </div>
 
-      <!-- CONTENEDOR NAVEGACIÓN -->
+      <!-- Navegación -->
       <nav class="nav-header">
-        <!-- CONTENEDOR LISTA NAVEGACIÓN -->
         <ul class="nav-list">
-          <li><a href="/index.html" class="nav-link">Inicio</a></li>
-          <li><a href="/paginas/quienes-somos.html" class="nav-link">¿QUIENES SOMOS?</a></li>
-          <li><a href="/paginas/programas.html" class="nav-link">PROGRAMAS</a></li>
-          <li><a href="/paginas/novedades.html" class="nav-link">NOVEDADES</a></li>
-          <li><a href="/paginas/contacto.html" class="nav-link">CONTACTO</a></li>
-          <li><a href="/paginas/dona.html" class="donate-button">Doná</a></li>
+          <li><a href="../index.html" class="nav-link">Inicio</a></li>
+          <li><a href="quienes-somos.html" class="nav-link">¿QUIENES SOMOS?</a></li>
+          <li><a href="programas.html" class="nav-link">PROGRAMAS</a></li>
+          <li><a href="novedades.html" class="nav-link">NOVEDADES</a></li>
+          <li><a href="contacto.html" class="nav-link">CONTACTO</a></li>
+          <li><a href="dona.html" class="donate-button">Doná</a></li>
         </ul>
       </nav>
 
-      <!-- CONTENEDOR MENÚ DESPLEGABLE E IDIOMAS -->
+      <!-- Contenedor de Idioma y Menú -->
       <div class="header-right">
-
-        <!-- Contenedor de idiomas -->
         <div class="language-switch">
           <div class="language-toggle">
             <input type="checkbox" id="languageToggle" class="language-toggle-input">
@@ -70,46 +76,60 @@
             </label>
           </div>
         </div>
-
-        <!-- Contenedor del menú hamburguesa -->
         <button class="menu-toggle" aria-label="Menú">
           <span class="hamburger"></span>
         </button>
       </div>
-
     </header>
+
+    <!-- ###### CONTENIDO PRINCIPAL ###### -->
     <main class="container">
+
       <section id="contacto" class="section">
+
+        <!-- Contenedor Sección Contacto -->
         <div class="contacto-container">
+
+          <!-- Contenedor Información Contacto -->
           <div class="contacto-info">
+
             <h3 class="contacto-main-title" data-i18n="contacto.title">
               Contacto
             </h3>
+
             <h3 data-i18n="contacto.mas_info">Para más información:</h3>
+
             <p data-i18n="contacto.form_text">
               Completa el formulario y nos pondremos en contacto contigo.
             </p>
+
             <div class="social-icons">
               <a
                 href="https://wa.me/+5491131560677"
                 target="_blank"
                 rel="noopener"
                 title="WhatsApp"
-                ><i class="fab fa-whatsapp"></i
-              ></a>
+                >
+                <i class="fab fa-whatsapp"></i>
+                  <span>+5491131560677</span>
+              </a>
               <a
                 href="https://www.instagram.com/Cruxes_solidarias"
                 target="_blank"
                 rel="noopener"
                 title="Instagram"
-                ><i class="fab fa-instagram"></i
-              ></a>
-              <a href="mailto:info@cruxes.org" title="Gmail"
-                ><i class="fas fa-envelope"></i
-              ></a>
+                >
+                <i class="fab fa-instagram"></i>
+                  <span>@Cruxes_solidarias</span>
+              </a>
+              <a href="mailto:info@cruxes.org" title="Gmail">
+                <i class="fas fa-envelope"></i>
+                <span>info@cruxes.org</span>
+              </a>
             </div>
           </div>
-          <!-- Formulario de contacto -->
+          
+          <!-- Contenedor Formulario -->
           <div class="formulario-container">
             <form id="contacto-form" class="contacto-form">
               <div class="form-group">

@@ -1041,3 +1041,11 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }, 100);
 });
+
+// Flip para las cards de inicio
+  // Selecciona todas las tarjetas
+  document.querySelectorAll('.card').forEach(card => {
+    card.addEventListener('click', () => {
+      card.classList.toggle('flipped'); // alterna la clase
+    });
+  });

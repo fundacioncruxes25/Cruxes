@@ -5,10 +5,10 @@
 
     Autor: Juan Decia
     
-    Última Actualización: 20/11/2025
+    Última Actualización: 24/11/2025
 */
 
-/* Reset */
+/* ####### RESET STYLES ####### */
 * {
     margin: 0;
     padding: 0;
@@ -16,14 +16,15 @@
     font-family: var(--font-family);
 }
 
-/* Fondo general de la página */
-html, body {
-    height: 100%;
-}
+/* ###### ESTILOS GENERALES ###### */
 
-/* Configuración de scroll suave */
+/* Fondo general de la página */
+/* html, body {
+    height: 100%;
+} */
+
 html {
-    scroll-behavior: smooth;
+    scroll-behavior: smooth; /* scroll suave */
 }
 
 body {
@@ -31,11 +32,15 @@ body {
     line-height: 1.2;
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
 }
 
 main {
     flex: 1 0 auto;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
 }
 
 /* Contenedor principal con ancho máximo */
@@ -45,17 +50,51 @@ main {
     margin: 0 auto;
 }
 
-/* Estilos base para secciones */
-section {
-    display: flex;
-    flex-direction: column;
-}
-
-.section-objetivos {
+/* Estilo general para las secciones del elemento main */
+.cont-section{
     margin: 3% auto;
-    flex-direction: row;
     max-width: 90%;
     justify-content: center;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Separador */
+hr {
+  display: block;
+  width: 100%;
+  max-width: 90%;
+  margin: 1rem auto;
+  border: none;
+  height: 4px;
+  border-radius: 50%;
+  background: linear-gradient(
+    to right,
+    #FFD180, #FFA726, #FB8C00, #E65100
+  );
+}
+
+.hr-1 {
+  margin-top: 3%;
+}
+
+.quote {
+    color: var(--color-primary);
+    
+}
+
+/* #################################### */
+
+/* ###### ESTILOS ESPECÍFICOS DE SECCIONES ###### */
+
+/* ### Inicio Sección Objetivos ### */
+
+.section-objetivos {
+    display: flex;
+    flex-direction: row;
 }
 
 .article-objetivos {
@@ -64,14 +103,22 @@ section {
     width: 33.3%;
 }
 
-.card-titulo {
-    padding: 20px;
-}
-
-.card-subtitle {
+.subtitle {
     font-size: 2em;
     color: var(--color-primary);
 }
+
+.cont-descripcion {
+    margin-top: 5%;
+}
+
+/* Articulo Objetivos */
+.cont-descripcion p {
+    text-align: justify;
+    line-height: 1.4em;
+}
+
+/* Artículo Imagen */
 
 .card-imagen {
     display: flex;
@@ -82,41 +129,26 @@ section {
 
 .card-imagen > figure {
     display: flex;
-    height: 30%;
+    justify-content: center;
+    align-items: center;    
 }
 
-.card-descripcion {
-    padding: 15px;
+.card-imagen > figure > img {
+    width: 80%;
 }
 
-.card-descripcion > p {
+/* Artículo Que Ofrecemos */
+
+.cont-descripcion ul {
+    list-style-position: inside;
     text-align: justify;
-    line-height: 1.4em;
 }
 
-.card-descripcion > ul > li {
-    padding: 10px;
+.cont-descripcion ul li:nth-child(even) {
+    margin: 25px 0;
 }
 
 /* ====================================== */
-
-/* Sección Flayers */
-
-.seccion-flayers {
-    margin: 6% auto;
-    max-width: 90%;
-    border: 1px solid black;
-}
-
-.footer {
-    flex-shrink: 0;
-}
-
-/* Estilos base para enlaces */
-a {
-    text-decoration: none;
-    color: inherit;
-}
 
 /* Clase para ocultar elementos */
 .hidden {
@@ -130,11 +162,7 @@ a {
     border-top: none;
 }
 
-/* Estilos para citas */
-.quote {
-    color: var(--color-primary);
-    
-}
+
 
 /* Títulos de sección */
 .section-title {
@@ -161,6 +189,39 @@ a {
     }
 }
 
+@media (max-width: 992px) {
+    .container {
+        width: 80%;
+        max-width: 640px;
+        margin: 0 auto;
+    }
+    
+    .section-objetivos{
+        flex-direction: column;
+        gap: 45px;
+    }
+
+    .article-objetivos{
+        width: 100%;
+    }
+
+    .card-imagen img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin-top: 20px;
+    }
+    
+    .card-descripcion > p {
+        font-size: 1.1em;
+    }
+
+    .card-descripcion ul {
+        margin-left: 15px; 
+        font-size: 1.3em;   
+    }
+}
+
 @media (max-width: 768px) {
     .container {
         width: 80%;
@@ -184,7 +245,8 @@ a {
     }
 
     .card-descripcion ul {
-        margin-left: 15px;    }
+        margin-left: 15px;    
+    }
 }
 
 @media (max-width: 480px) {

@@ -2,7 +2,7 @@
  
     == PÁGINA PRINCIPAL DE CRUXES DE LUZ ==
  
-    Última Actualización: 11/11/2025
+    Última Actualización: 24/11/2025
 
 -->
 
@@ -36,14 +36,17 @@
         emailjs.init("TU_PUBLIC_KEY"); // Reemplazar con tu clave pública de EmailJS
       })();
     </script>
+
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/flayers.css">
+    <link rel="stylesheet" href="styles/language.css">
     <link rel="stylesheet" href="styles/novedades.css">
     <link rel="stylesheet" href="styles/contacto.css">
-    <link rel="stylesheet" href="styles/footer.css">
-    <link rel="stylesheet" href="styles/cookies.css">
     <link rel="stylesheet" href="styles/construccion.css">
     <link rel="stylesheet" href="styles/whatsapp.css">
-    <link rel="stylesheet" href="styles/language.css">
-    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/cookies.css">
+
     <style>
       .programa-highlight {
         font-weight: 700;
@@ -104,30 +107,30 @@
         </div>
       </section>
 
-      <!-- Sección Cruxes Cards -->
-      <section class="section-objetivos">
+      <hr class="hr-1 gradiente">
 
-        <!-- Card #1 -->
+      <!-- === Sección Objetivos === -->
+      <section class="cont-section section-objetivos">
+
+        <!-- Artículo Objetivos -->
         <article class="article-objetivos">
 
-          <!-- Contenedor Título -->
-          <div class="card-titulo">
-            <h2 class="card-subtitle">Objetivo</h2>
+          <!-- Título -->
+          <div class="cont-subtitle">
+            <h2 class="subtitle">Objetivo</h2>
           </div>
 
-          <!-- Contenedor Descripción -->
-           <div class="card-descripcion">
+          <div class="cont-descripcion">
              <p>
                 Somos una Organización sin fines de lucro que busca: <br /><br />
                 Promover la SOLIDARIDAD, EL DESARROLLO PERSONAL Y LA ESPIRITUALIDAD. <br /><br />
                 Con el propósito de ser <strong>PUENTE</strong> entre las empresas, voluntarios, instituciones educativas, y las ONGs que requieren ayuda como a toda la comunidad.
              </p>
-           </div>
+          </div>
         </article>
 
-        <!-- Card #2 -->
+        <!-- Artículo Imagen -->
         <article class="article-objetivos">
-
           <!-- Contenedor Imagen -->
           <div class="card-imagen">
             <figure>
@@ -136,16 +139,16 @@
           </div>
         </article>
 
-        <!-- Card #3 -->
+        <!-- Artículo Qué Ofrecemos -->
         <article class="article-objetivos">
 
           <!-- Contenedor Título -->
-          <div class="card-titulo">
-            <h2 class="card-subtitle">¿Qué Ofrecemos?</h2>
+          <div class="cont-subtitle">
+            <h2 class="subtitle">¿Qué Ofrecemos?</h2>
           </div>
 
           <!-- Contenedor Descripción -->
-           <div class="card-descripcion">
+           <div class="cont-descripcion">
              <ul>
                 <li>
                   Formación en Desarrollo Personal, Servicio y Espiritualidad.
@@ -164,33 +167,116 @@
         </article>
       </section>
 
-      <!-- Sección Flayers -->
-      <!-- <section class="seccion-flayers"> -->
+      <hr class="gradiente">
 
-        <!-- Subtitulo -->
-        <!-- <article>
-          <h2>Lanzamientos</h2>
-        </article> -->
+      <!-- === Sección Flayers === -->
+      <section class="cont-section seccion-flayers">
 
-        <!-- Contenedor Flayers -->
-        <!-- <article>
+        <!-- Artículo Título Flayer -->
+         <article class="articulo-cont-titulo">
+          <div class="cont-subtitle">
+            <h2 class="subtitle">Lanzamientos</h2>
+          </div>
+         </article>
 
+        <!-- Articulo Contenedor Flayers -->
+        <article class="articulo-cont-flayers">
+
+          <!-- Flayer #1 -->
+          <div class="cont-flayer">
+
+            <div class="card">
+
+              <!-- Frente -->
+              <div class="front">
+                <img class="" src="/Cruxes/imagen/Voluntariado.webp" alt="Programa-de-voluntariado" title="programa-de-voluntariado" />
+              </div>
+
+              <!-- Reverso -->
+              <div class="back">
+                <h3>Proximamente 👌</h3>  
+              </div>
+            </div>
+          </div>
+
+          <!-- Flayer #2 -->
+          <div class="cont-flayer">
+
+            <div class="card">
+
+              <!-- Frente -->
+              <div class="front">
+                <img src="/Cruxes/imagen/Asesoramiento.webp" alt="Programa-de-voluntariado" title="programa-de-voluntariado" />
+              </div>
+
+              <!-- Reverso -->
+              <div class="back">
+                <h3>Proximamente 👌</h3>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Flayer #3 -->
+          <div class="cont-flayer">
+
+            <div class="card">
+
+              <!-- Frente -->
+              <div class="front">
+                <img src="/Cruxes/imagen/valores.webp" alt="Programa-de-voluntariado" title="programa-de-voluntariado" />
+              </div>
+
+              <!-- Reverso -->
+              <div class="back">
+                <h3>Proximamente 👌</h3>
+              </div>
+            </div>
+          </div> 
         </article>
-      </section> -->
+      </section>
+
+      <hr class="gradiente">
+      
     </main>
 
+    <!-- ###### FOOTER ###### -->
     <footer class="footer">
       <div class="container">
-        <img src="imagen/cruxes-logo.png" alt="Cruxes de Luz" class="footer-logo">
-        <div class="footer-center-content">
-          <p class="footer-text"><q>Una cadena de amor y servicio en acción</q></p>
-          <a href="documentos/politicas-de-seguridad.pdf" download class="footer-link">Cookies y políticas de seguridad</a>
+
+        <!-- FOOTER SECCION 1 -->
+        <div class="section-1">
+          <div>
+            <img src="imagen/cruxes-logo.png" alt="Cruxes" class="footer-logo">
+          </div>
+          
+          <div class="cont-social-icons">
+            
+            <div class="social-icons-subtitle">
+              <h3>Nuestras Redes</h3>
+            </div>
+
+            <div class="social-icons">
+              <a href="https://wa.me/+5491131560677" target="_blank" rel="noopener" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+              <a href="https://www.instagram.com/Cruxes_solidarias" target="_blank" rel="noopener" title="Instagram"><i class="fab fa-instagram"></i></a>
+              <a href="mailto:info@cruxes.org" title="Gmail"><i class="fas fa-envelope"></i></a>
+            </div>
+          </div>
         </div>
-        <div class="social-icons">
-          <a href="https://wa.me/+5491131560677" target="_blank" rel="noopener" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
-          <a href="https://www.instagram.com/Cruxes_solidarias" target="_blank" rel="noopener" title="Instagram"><i class="fab fa-instagram"></i></a>
-          <a href="mailto:info@cruxes.org" title="Gmail"><i class="fas fa-envelope"></i></a>
+
+        <!-- FOOTER SECCION 2 -->
+         <div class="section-2">
+           <div class="cont-cookies">
+             <p class="footer-text"><q>Una cadena de amor y servicio en acción</q></p>
+             <a href="documentos/politicas-de-seguridad.pdf" download class="footer-link">Cookies y políticas de seguridad</a>
+           </div>
+         </div>
+
+        <!-- FOOTER SECCION 3 -->
+        <div class="section-3">
+          <p class="footer-text">© 2024 Fundación Cruxes de Luz. Todos los derechos reservados.</p>
         </div>
+
       </div>
     </footer>
 
@@ -241,19 +327,19 @@
       </div>
     </div>
 
+    <!-- Flecha flotante para ir arriba -->
+    <a href="#" class="scroll-top-float hidden" id="scrollTopBtn" aria-label="Ir arriba">
+      <i class="fas fa-arrow-up"></i>
+    </a>
+    
+    <!-- Botón WhatsApp -->
+    <a href="https://wa.me/+5491131560677" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+
     <!-- Scripts -->
     <script src="js/translations.js"></script>
     <script src="script.js"></script>
     <script src="cookie_consent.js"></script>
-
-    <!-- Flecha flotante para ir arriba -->
-    <a href="#" class="scroll-top-float hidden" id="scrollTopBtn" aria-label="Ir arriba">
-        <i class="fas fa-arrow-up"></i>
-    </a>
-
-    <!-- Botón WhatsApp -->
-    <a href="https://wa.me/+5491131560677" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">
-        <i class="fab fa-whatsapp"></i>
-    </a>
   </body>
 </html>
