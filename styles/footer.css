@@ -1,4 +1,13 @@
-/* Estilos del footer */
+/* 
+    == ARCHIVO CON LOS ESTILOS DEL FOOTER ==
+
+    == ORDEN DE ESTILOS SEGÚN JERARQUÍA ==
+
+    Autor: Juan Decia
+    
+    Última Actualización: 15/12/2025
+*/
+
 .footer {
     display: flex;
     background-color: #fced78af;

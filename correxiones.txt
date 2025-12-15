@@ -108,3 +108,18 @@ DIRECTORIO CRUXES
 
 10-12
     * Se aplica responsive a los cambios nuevos.
+
+11-12
+    * Se recibe feedback de los cambios recibidos.
+        (Achicar la imagen de las tarjetas para generar más espacios entre si)
+        (Achicar el espacio entre el elemento de lista y el texto)
+        (Colocar en una sola línea el texto del footer)
+        (Alinear información en la sección de contacto y achicar fuente)
+        (Desde la página de contacto aumentar espacio entre el contenido y el footer)
+
+
+12-12
+    * Se aplican los cambios del footer.
+
+13-12
+    * Se aplican los cambios a la página de contacto.

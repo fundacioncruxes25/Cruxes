@@ -1,16 +1,22 @@
-/* ========================================================================== 
-ESTILOS CONTACTO
-   ========================================================================== */
+/* 
+    == ARCHIVO CON LOS ESTILOS DE LA PÁGINA DE CONTACTO ==
+
+    == ORDEN DE ESTILOS SEGÚN JERARQUÍA ==
+
+    Autor: Juan Decia
+    
+    Última Actualización: 15/12/2025
+*/
 
 #contacto {
-    margin-top: var(--spacing-md); /* Añadir espacio en la parte superior */
-    border-top: none; /* Eliminar la línea naranja superior */
+    margin-top: 50px;
+    border-top: none;
     margin-bottom: var(--spacing-md); /* Añadir espacio en la parte inferior */
 }
 
 /* Contenedor de contacto */
 .contacto-container {
-    padding-top: 48px; /* Aumenta la separación entre la línea y el contenido */
+    padding-top: 48px;
     display: grid;
     grid-template-columns: 1fr; /* Una columna por defecto */
     gap: var(--spacing-lg);
@@ -21,7 +27,7 @@ ESTILOS CONTACTO
 
 /* Información de contacto */
 .contacto-info {
-    text-align: left; /* Alinear a la izquierda */
+    text-align: left;
     margin-bottom: var(--spacing-sm); /* Espacio debajo en móvil */
 }
 
@@ -36,34 +42,43 @@ ESTILOS CONTACTO
 /* Título de información de contacto (Para más información:) */
 .contacto-info h3 {
     color: black;
-    margin-bottom: var(--spacing-sm); /* Espacio debajo */
-    font-size: var(--font-size-xxl); /* Tamaño ajustado del subtítulo */
-    font-weight: 700; /* Negrita */
+    margin-bottom: var(--spacing-sm);
+    font-size: var(--font-size-xxl);
+    font-weight: 700;
 }
 
 /* Párrafo de información de contacto */
 .contacto-info p {
-    color: #4b5563; /* Color de texto oscuro */
-    margin-bottom: var(--spacing-md); /* Espacio debajo del párrafo */
-    font-size: var(--font-size-lg); /* Ajustar tamaño del párrafo */
+    color: #4b5563;
+    margin-bottom: var(--spacing-md); 
+    font-size: var(--font-size-lg);
 }
 
 /* Iconos sociales */
-.contacto-info .social-icons {
+.contacto-info .social-icons-container {
     display: flex;
     flex-direction: column;
     gap: var(--spacing-sm);
     margin-top: var(--spacing-md);
 }
 
-.contacto-info .social-icons a {
+.social-icons-block {
+    display: flex;
+}
+
+.social-icon {
+    display: flex;
+    gap: 15px;
+}
+
+.contacto-info .social-icons-container a {
     color: var(--color-primary); /* Color naranja */
-    font-size: var(--font-size-xxl); /* Tamaño de los iconos */
+    font-size: var(--font-size-xxl); /* Tamaño iconos */
     transition: color 0.3s ease;
 }
 
-.contacto-info .social-icons a:hover {
-    color: var(--color-primary-dark); /* Naranja oscuro en hover */
+.contacto-info .social-icons-container a:hover {
+    color: var(--color-primary-dark); /* Naranja oscuro */
 }
 
 /* Formulario de contacto */

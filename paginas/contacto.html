@@ -2,7 +2,7 @@
  
     == PÁGINA CONTACTO ==
  
-    Última Actualización: 26/11/2025
+    Última Actualización: 15/12/2025
 
 -->
 
@@ -13,7 +13,7 @@
     <!-- METADATOS -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Página principal de Cruxes de Luz" />
+    <meta name="description" content="Página de contacto de Cruxes de Luz" />
     <meta name="keywords" content="Cruxes, Fundación, Solidaria, Programas, Donaciones" />
     <meta name="author" content="Juan Decia" />
 
@@ -103,29 +103,42 @@
               Completa el formulario y nos pondremos en contacto contigo.
             </p>
 
-            <div class="social-icons">
-              <a
-                href="https://wa.me/+5491131560677"
-                target="_blank"
-                rel="noopener"
-                title="WhatsApp"
+            <!-- Iconos Sociales -->
+            <div class="social-icons-container">
+              <div class="social-icons-block">
+                <a
+                  class="social-icon"
+                  href="https://wa.me/+5491131560677"
+                  target="_blank"
+                  rel="noopener"
+                  title="WhatsApp"
                 >
-                <i class="fab fa-whatsapp"></i>
+                  <i class="fab fa-whatsapp"></i>
                   <span>+5491131560677</span>
-              </a>
-              <a
-                href="https://www.instagram.com/Cruxes_solidarias"
-                target="_blank"
-                rel="noopener"
-                title="Instagram"
+                </a>             
+              </div>
+              <div class="social-icons-block">
+                <a
+                  class="social-icon"
+                  href="https://www.instagram.com/Cruxes_solidarias"
+                  target="_blank"
+                  rel="noopener"
+                  title="Instagram"
                 >
                 <i class="fab fa-instagram"></i>
                   <span>@Cruxes_solidarias</span>
               </a>
-              <a href="mailto:info@cruxes.org" title="Gmail">
-                <i class="fas fa-envelope"></i>
-                <span>info@cruxes.org</span>
-              </a>
+              </div>
+              <div class="social-icons-block">
+                <a
+                  class="social-icon" 
+                  href="mailto:info@cruxes.org"
+                  title="Gmail"
+                >
+                  <i class="fas fa-envelope"></i>
+                  <span>info@cruxes.org</span>
+                </a>
+              </div>
             </div>
           </div>
           
@@ -221,28 +234,104 @@
         </div>
       </section>
     </main>
+    <!-- ###### FOOTER ###### -->
     <footer class="footer">
       <div class="container">
-        <img src="../imagen/Block.png" alt="Cruxes de Luz" class="footer-logo">
-        <div class="footer-center-content">
-          <p class="footer-text"><q>Una cadena de amor y servicio en acción</q></p>
-          <a href="../documentos/politicas-de-seguridad.pdf" download class="footer-link">Cookies y políticas de seguridad</a>
+
+        <!-- FOOTER SECCION 1 -->
+        <div class="section-1">
+          <div>
+            <img src="/Cruxes/imagen/cruxes-logo.png" alt="Cruxes" class="footer-logo">
+          </div>
+          
+          <div class="cont-social-icons">
+            
+            <div class="social-icons-subtitle">
+              <h3>Nuestras Redes</h3>
+            </div>
+
+            <div class="social-icons">
+              <a href="https://wa.me/+5491131560677" target="_blank" rel="noopener" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+              <a href="https://www.instagram.com/Cruxes_solidarias" target="_blank" rel="noopener" title="Instagram"><i class="fab fa-instagram"></i></a>
+              <a href="mailto:info@cruxes.org" title="Gmail"><i class="fas fa-envelope"></i></a>
+            </div>
+          </div>
         </div>
-        <div class="social-icons">
-          <a href="https://wa.me/+5491131560677" target="_blank" rel="noopener" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
-          <a href="https://www.instagram.com/Cruxes_solidarias" target="_blank" rel="noopener" title="Instagram"><i class="fab fa-instagram"></i></a>
-          <a href="mailto:info@cruxes.org" title="Gmail"><i class="fas fa-envelope"></i></a>
+
+        <!-- FOOTER SECCION 2 -->
+         <div class="section-2">
+           <div class="cont-cookies">
+             <p class="footer-text"><q>Una cadena de amor y servicio en acción</q></p>
+             <a href="documentos/politicas-de-seguridad.pdf" download class="footer-link">Cookies y políticas de seguridad</a>
+           </div>
+         </div>
+
+        <!-- FOOTER SECCION 3 -->
+        <div class="section-3">
+          <p class="">© 2024 Fundación Cruxes de Luz. Todos los derechos reservados.</p>
         </div>
+
       </div>
     </footer>
-    <script src="../js/translations.js"></script>
-    <script src="../script.js"></script>
-    <script src="../cookie_consent.js"></script>
+
+    <!-- Modal de Política de Cookies -->
+    <div id="modal-cookies" class="modal-cookies">
+      <div class="modal-contenido">
+        <!-- Contenedor para el texto largo -->
+        <div class="modal-text-content">
+            <h3>POLÍTICA DE PRIVACIDAD</h3>
+            <p>En la FUNDACIÓN CRUXES, nos comprometemos a proteger la privacidad de nuestros usuarios, beneficiarios, aliados y colaboradores. Cumplimos con las disposiciones establecidas en la Ley 25.326 de Protección de los Datos Personales y garantizamos el tratamiento responsable de la información que nos proporcionas.</p>
+            <ol>
+              <li><strong>Información que recopilamos</strong><br>
+                <strong>Datos personales:</strong> Nombre, apellido, correo electrónico, número de teléfono y cualquier otra información que decidas compartirnos al registrarte o contactarnos.<br>
+                <strong>Datos técnicos:</strong> Dirección IP, tipo de navegador, sistema operativo y cookies, con el objetivo de mejorar la experiencia de navegación.
+              </li>
+              <li><strong>Finalidad del tratamiento de los datos</strong><br>Tus datos personales serán utilizados únicamente para:<br>
+                <ul>
+                  <li>Mantenerte informado sobre nuestras actividades y campañas.</li>
+                  <li>Gestionar colaboraciones o donaciones.</li>
+                  <li>Responder a tus consultas o solicitudes.</li>
+                  <li>Cumplir con nuestras obligaciones legales y regulatorias.</li>
+                </ul>
+              </li>
+              <li><strong>Derechos de los titulares de datos</strong><br>De acuerdo con la Ley 25.326, tienes los siguientes derechos:<br>
+                <ul>
+                  <li>Acceder a tus datos personales que obran en nuestra base.</li>
+                  <li>Solicitar la rectificación, actualización o supresión de tus datos.</li>
+                  <li>Oponerte al uso de tus datos para ciertos fines, como comunicaciones comerciales.</li>
+                </ul>
+                Podrás ejercer estos derechos enviando un correo electrónico a nuestro email info@cruxes.org, o llamando al teléfono +54-11-3156-0677.
+              </li>
+              <li><strong>Uso de cookies y tecnologías similares</strong><br>Utilizamos cookies para mejorar la funcionalidad de nuestro sitio web. Puedes configurar tu navegador para desactivarlas, aunque esto podría afectar la experiencia de navegación.</li>
+              <li><strong>Confidencialidad y seguridad</strong><br>Implementamos medidas técnicas y organizativas para proteger tu información frente a accesos no autorizados, pérdidas o alteraciones.</li>
+              <li><strong>Transferencia de datos a terceros</strong><br>No compartimos, vendemos ni cedemos tus datos personales a terceros, salvo en los siguientes casos:<br>
+                <ul>
+                  <li>Con proveedores de servicios que nos ayudan en la administración de nuestro sitio web, bajo acuerdos de confidencialidad.</li>
+                  <li>Para cumplir con obligaciones legales o requerimientos judiciales.</li>
+                </ul>
+              </li>
+              <li><strong>Autoridad de aplicación</strong><br>En caso de considerar que hemos incumplido con la Ley 25.326, puedes presentar un reclamo ante la Agencia de Acceso a la Información Pública, órgano de control de la ley en Argentina.</li>
+            </ol>
+        </div>
+
+        <div class="modal-botones">
+          <button class="btn-aceptar">Aceptar</button>
+          <button class="btn-rechazar">Rechazar</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Botones Flotantes -->
     <a href="#" class="scroll-top-float hidden" id="scrollTopBtn" aria-label="Ir arriba">
         <i class="fas fa-arrow-up"></i>
     </a>
     <a href="https://wa.me/+5491131560677" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">
         <i class="fab fa-whatsapp"></i>
     </a>
+
+    <!-- Scripts -->
+    <script src="../js/translations.js"></script>
+    <script src="../script.js"></script>
+    <script src="../cookie_consent.js"></script>
   </body>
 </html>
