@@ -5,7 +5,7 @@
 
     Autor: Juan Decia
     
-    Última Actualización: 15/12/2025
+    Última Actualización: 17/12/2025
 */
 
 .footer {
@@ -188,6 +188,11 @@
 
 /* Media query específica para pantallas de 480px */
 @media (max-width: 480px) {
+
+    .footer {
+        background-color: #f9be729d;
+    }
+
     .footer .container {
         flex-direction: column;
         gap: 30px;

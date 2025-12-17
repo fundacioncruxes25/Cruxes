@@ -5,7 +5,7 @@
 
     Autor: Juan Decia
     
-    Última Actualización: 15/12/2025
+    Última Actualización: 17/12/2025
 */
 
 #contacto {
@@ -73,7 +73,7 @@
 
 .contacto-info .social-icons-container a {
     color: var(--color-primary); /* Color naranja */
-    font-size: var(--font-size-xxl); /* Tamaño iconos */
+    font-size: 1.3em; /* Tamaño iconos */
     transition: color 0.3s ease;
 }
 

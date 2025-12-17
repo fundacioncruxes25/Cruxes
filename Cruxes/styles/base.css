@@ -142,6 +142,12 @@ hr {
 .cont-descripcion ul {
     list-style-position: inside;
     text-align: justify;
+    list-style-type: none;
+}
+
+/* Se agrega el bullet manualmente para achicar el espacio con el texto */
+.cont-descripcion ul li::before {
+    content: "•";
 }
 
 .cont-descripcion ul li:nth-child(even) {

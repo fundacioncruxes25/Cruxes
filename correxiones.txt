@@ -123,3 +123,13 @@ DIRECTORIO CRUXES
 
 13-12
     * Se aplican los cambios a la página de contacto.
+
+15-12
+    * Se corrigen el tamaño de la fuente en la sección de contactos.
+    * Se cambia a un color más opaco al footer en pantallas pequeñas.
+    * Se separa el contenido del pie de página en la sección de contactos.
+
+16-12
+    * Se achica el espacio entre el bullet de la lista con el texto en la página de inicio.
+    * Se saca altura de las cards para achicar el espacio entre las mismas en pantallas chicas.
+    * Se achican las imágenes de los flayers de la pantalla de inicio para que haya más espacio entre sí.
