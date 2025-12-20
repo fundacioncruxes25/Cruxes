@@ -60,7 +60,7 @@
 }
 
 /* Imagen ocupa todo el frente */
-.front img {
+.front img, .back img {
   width: 100%;
   height: 100%;
   object-fit: contain;
@@ -69,7 +69,6 @@
 
 /* Reverso */
 .back {
-  background: #f0f0f0;
   transform: rotateY(180deg); /* lo coloca detrás */
 }
 
