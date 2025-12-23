@@ -10,71 +10,101 @@
 
 /* Elemento Principal de la sección */
 .seccion-flayers {
-    flex-direction: row; /* display flex por herencia */
-    flex-wrap: wrap;
+  flex-direction: row; /* display flex por herencia */
+  flex-wrap: wrap;
 }
 
 .seccion-flayers > article {
-    gap: 40px;
-    width: 100%;
-    margin: 20px 0;
+  width: 100%;
+  margin: 20px 0;
 }
 
 /* Main Cards Element */
 .articulo-cont-flayers {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    justify-content: space-around;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 60px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 /* Main Card Element */
 .cont-flayer {
-  width: 28%;
   perspective: 1000px; /* da profundidad 3D */
   box-shadow: 0px 5px 11px 0px rgba(0,0,0,0.75);
 }
 
-/* Tarjeta */
-.card {
-  position: relative;
+/* Card con efecto 3D */
+.cont-flayer .card {
   width: 100%;
-  height: 600px;
+  height: 100%;
   transform-style: preserve-3d;
-  transition: transform 0.8s;
+  transition: transform 0.6s ease;
+  cursor: pointer;
+  /* Grid para superponer las caras sin absolute */
+  display: grid;
+  grid-template-areas: "card-face";
 }
 
-/* Efecto flip al hacer hover */
-.card.flipped {
+/* Clase para girar la card al hacer click */
+.cont-flayer .card.flipped {
   transform: rotateY(180deg);
 }
 
-/* Frente y reverso */
-.front, .back {
-  position: absolute;
-  width: 100%;
-  backface-visibility: hidden; /* oculta el lado trasero al rotar */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-/* Imagen ocupa todo el frente */
-.front img, .back img {
+/* Estilos comunes para frente y reverso */
+.cont-flayer .front,
+.cont-flayer .back {
+  grid-area: card-face;
+  backface-visibility: hidden;
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Cara frontal */
+.cont-flayer .front {
+  /* Ya está en su posición por defecto */
+}
+
+/* Cara trasera (rotada 180 grados) */
+.cont-flayer .back {
+  transform: rotateY(180deg);
+}
+
+/* Imágenes dentro de las caras */
+.cont-flayer .front img,
+.cont-flayer .back img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   display: block;
 }
 
-/* Reverso */
-.back {
-  transform: rotateY(180deg); /* lo coloca detrás */
+/* Hover effect - Agranda la card para indicar interactividad */
+.cont-flayer .card {
+  transition: transform 0.6s ease, box-shadow 0.3s ease;
 }
 
-.front img {
-    height: 100%;
+.cont-flayer .card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
 }
+
+.cont-flayer .card.flipped:hover {
+  transform: rotateY(180deg) scale(1.05);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+}
+
+/* Efecto en las caras para que también muestren la interactividad */
+.cont-flayer .front,
+.cont-flayer .back {
+  transition: box-shadow 0.3s ease;
+}
+
+
 
 /* ====== MEDIA QUERIES ======= */
 
