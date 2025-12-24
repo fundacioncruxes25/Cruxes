@@ -234,10 +234,6 @@ hr {
         max-width: 640px;
         margin: 0 auto;
     }
-    
-    .section-objetivos{
-        flex-direction: column;
-    }
 
     .article-objetivos{
         width: 100%;
@@ -261,5 +257,9 @@ hr {
         max-width: 80%;
         margin: 0 auto;
     }
-}
 
+    .cont-section {
+        border: 1px solid black;
+    }
+
+}

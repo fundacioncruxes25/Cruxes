@@ -64,10 +64,12 @@
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 }
 
-/* Cara frontal */
-.cont-flayer .front {
-  /* Ya está en su posición por defecto */
-}
+/* Cara frontal
+  .cont-flayer .front {
+    Ya está en su posición por defecto
+  }
+
+*/
 
 /* Cara trasera (rotada 180 grados) */
 .cont-flayer .back {
@@ -108,13 +110,19 @@
 
 @media (max-width: 992px) {
 
-  .seccion-flayers > article {
-    flex-direction: column;
+  .articulo-cont-flayers {
+    grid-template-columns: 1fr;
   }
 
   .cont-flayer {
+    display: flex;
+    justify-content: center;
     width: 100%;
     box-shadow: none;
+  }
+
+  .cont-flayer .card {
+    width: 70%;
   }
 
   .front, .back {
@@ -128,14 +136,12 @@
 }
 
 @media (max-width: 768px) {
-  .cont-flayer {
-    height: 350px;
-  }
   
   .articulo-cont-flayers {
     grid-template-columns: 1fr;
-    gap: 20px;
+    gap: 70px;
   }
+
 }
 
 @media (max-width: 480px) {
