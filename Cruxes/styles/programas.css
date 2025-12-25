@@ -1,3 +1,7 @@
+#programas {
+    margin-bottom: 30px;
+}
+
 /* Título de programas */
 #programas .section-title {
     color: var(--color-bermellon);

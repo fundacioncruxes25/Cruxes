@@ -11,7 +11,7 @@
 #contacto {
     margin-top: 50px;
     border-top: none;
-    margin-bottom: var(--spacing-md); /* Añadir espacio en la parte inferior */
+    margin-bottom: 50px; /* Añadir espacio en la parte inferior */
 }
 
 /* Contenedor de contacto */
